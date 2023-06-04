@@ -50,7 +50,6 @@ You will need to set the correct parameters for your setup:
 | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `-v /path/to/bookmarks.json:/app/public/bookmarks.json` | (required) Volume mount for bookmarks file. You can use the one in this repo to get started. |
 | `-v /path/to/images:/app/public/images` | (optional) Volume mount for images folder for any local bookmark images. |
-| `-e START_FULLSCREEN="1"`        | (optional, default=1) Automatically launches the site in fullscreen mode as soon as its opened. To disable, set to "0".                      |
 | `-e DEFAULT_THEME="1"`        | (optional, default=1) Sets the look and feel to one of the availble [themes](#themes) (ex. `DEFAULT_THEME=7` sets the theme to **[Theme 7](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_7.png)**). Set to "0" to customize your own theme.                      |
 | `-e BOOKMARK_HEGHT="150"`        | (optional, default=150) Only applicable when DEFAULT_THEME=0. Sets the pixel height of the bookmark image.                      |
 | `-e BOOKMARK_PADDING="15"`        | (optional, default=15) Only applicable when DEFAULT_THEME=0. Sets the pixel padding between bookmark images.                      |
@@ -102,7 +101,6 @@ services:
     networks:
       - socket_proxy
     environment:
-      - START_FULLSCREEN=1
       - DEFAULT_THEME=1
     volumes:
       - /path/to/bookmarks.json:/app/public/bookmarks.json
@@ -138,11 +136,9 @@ If you have more categories and bookmarks than can fit on the screen, you can sw
 
 ## Going Fullscreen
 
-By default `START_FULLSCREEN=1` which will automatically intiate the fullscreen trick (browser opens fullscreen, lights dim). A Youtube window will display, just click `GO TO SITE`.
+To go fullscreen and intiate the fullscreen trick (browser opens fullscreen, lights dim), just tap on any bookmark.
 
-If `START_FULLSCREEN=0` or you need to reinitiate the fullscreen trick at any time , just click the fullscreen button in the upper right.
-
-![Fullscreen Button](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/fullscreen_button.png)
+A Youtube window will display, just click `GO TO SITE` and that's it.
 
 ## Bookmarks
 

@@ -5,22 +5,16 @@ import {
   Container,
   createTheme,
   CssBaseline,
-  IconButton,
   List,
   ListItem,
   Toolbar,
   Typography,
   ThemeProvider,
 } from "@mui/material";
-import {
-  Fullscreen as FullscreenIcon,
-} from "@mui/icons-material";
 import { styled } from "@mui/system";
 import logo from "./logo.png";
 
 // CUSTOM SETTINGS
-
-const startFullscreen = process.env.START_FULLSCREEN || "1";
 
 // style
 const defaultTheme = process.env.DEFAULT_THEME || "16";
@@ -206,14 +200,6 @@ const DateTimeContainer = styled(Box)({
   display: "flex",
 });
 
-// Fullscreen button
-const FullscreenIconButton = styled(IconButton)({
-  // Hide the IconButton for devices with a maximum device width of 844px
-  [`@media (max-device-width: 844px)`]: {
-    display: "none",
-  },
-});
-
 // Container for the logo
 const LogoContainer = styled(Box)({
   display: "flex",
@@ -314,16 +300,10 @@ const BookmarkImage = styled("img")({
   },  
 });
 
-const getFullscreenUrl = (currentUrl) => {
+const getFullscreenUrl = (url) => {
   const youtubeUrl = 'https://www.youtube.com/redirect?q=';
-  const fullscreenUrl = youtubeUrl + encodeURIComponent(currentUrl);
+  const fullscreenUrl = youtubeUrl + encodeURIComponent(url);
   return fullscreenUrl;
-};
-
-const openFullscreen = (url) => {
-  const currentUrl = window.location.origin + window.location.pathname + "?redirected=1";
-  const fullscreenUrl = getFullscreenUrl(currentUrl);
-  window.open(fullscreenUrl, "_self");
 };
 
 const checkFileExists = async (url) => {
@@ -369,17 +349,7 @@ function App() {
     };
     
     fetchBookmarks();
-  
-    const hasQueryString = window.location.href.includes("redirected=1");
-  
-    if (
-      (startFullscreen === "true" || startFullscreen === "1") &&
-      !hasQueryString &&
-      !theme.breakpoints.down("sm")
-    ) {
-      openFullscreen();
-    }
-    
+     
   }, []);
   
 
@@ -440,13 +410,6 @@ function App() {
                 <img src={logo} alt="Homepage" style={{ width: "100px" }} />
               </a>
             </LogoContainer>
-
-            <FullscreenIconButton
-              color="inherit"
-              onClick={openFullscreen}             
-            >
-              <FullscreenIcon />
-            </FullscreenIconButton>
           </Toolbar>
         </AppBar>
         <Toolbar />
@@ -464,12 +427,13 @@ function App() {
                 <RowContainer key={category.category}>
                   <CategoryTitle variant="h5">{category.category}</CategoryTitle>
                   <BookmarksList>
-                    {category.bookmarks.map((bookmark) => (
+                  {category.bookmarks.map((bookmark, index) => (
                       <BookmarkItem
-                        key={bookmark.name}
+                        key={index}
                         button
                         component="a"
-                        href={bookmark.url}
+                        target="_self"
+                        href={getFullscreenUrl(bookmark.url)}
                       >
                       <BookmarkContent>
                         <BookmarkImage

@@ -1,25 +1,18 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="src/logo.png">
-    <img src="src/logo.png" >
-  </picture>
-</p>
+![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/src/logo.png)
 
-<p align="center">
-  A self hosted, personal, fullscreen homepage for your Tesla. Keep your favorite bookmarks private, organized, and ready to go. Launch any and all bookmarks in fullscreen (automatically dimming your Tesla's interior and exterior lights).
+A self hosted, personal, fullscreen homepage for your Tesla. Keep your favorite bookmarks private, organized, and ready to go. Launch any and all bookmarks in fullscreen (automatically dimming your Tesla's interior and exterior lights).
 
-  ![](./docs/images/themes/theme_1.png)
-</p>
+![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_1.png) 
 
-<form style="text-align:center; padding-top: 10px" action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="XQMVL329W7M32" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="I hope you're enjoying my project - any contribution to say thanks is very appreciated." alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
+<a href="https://www.paypal.com/donate/?hosted_button_id=XQMVL329W7M32" rel="noopener noreferrer"><img alt=donate src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a>
+
+Github Repo: [https://github.com/JesseWebDotCom/homepage-for-tesla](https://github.com/JesseWebDotCom/homepage-for-tesla)
+
+Personal Website: [https://jesseweb.com/self-hosting/homepage-for-tesla](https://jesseweb.com/self-hosting/homepage-for-tesla)
 
 ## About
 
-Only Tesla native apps (ex. Netflix) open in fullscreen and dim your car's interior and exterior lighting (setting the atmosphere and minimizing drawing attention). `Homepage` can open any site (ex. Prime Video, Disney+, etc) and trick the Tesla into opening fullscreena and dimming the lights. While there are several great non-self hosted solutions that utilize the same trick (ex. [testube.app](https://testube.app), [abettertheater.com](https://abettertheater.com), [fullscreentesla.com](https://fullscreentesla.com)), `Homepage` gives you privacy and control (plus some enhancements) that only a self hosted solution can provide.
+Only Tesla native apps (ex. Netflix) open in fullscreen and dim your car's interior and exterior lighting (perfectly setting the mode for media viewing). So what if you wanted to do the same for other sites? `Homepage` can open any site (ex. Prime Video, Disney+, etc) and safely trick the Tesla into opening fullscreen and dim the lights. While there are several great non-self hosted solutions that utilize the same trick (ex. [testube.app](https://testube.app), [abettertheater.com](https://abettertheater.com), [fullscreentesla.com](https://fullscreentesla.com)), `Homepage` gives you privacy and control (plus some enhancements) that only a self hosted solution can provide.
 
 ## Features
 
@@ -131,7 +124,7 @@ You can use [this site](https://bcrypt-generator.com) to create a hashed passwor
 
 #### Build an image from scratch
 
-If you want to build your own image from source code, clone this repo and then run the following:
+If you want to build your own image from source code, clone [this repo](https://github.com/JesseWebDotCom/homepage-for-tesla) and then run the following:
 
 ```bash
 docker build -t homepage-for-tesla .
@@ -150,11 +143,11 @@ By default `START_FULLSCREEN=1` which will automatically intiate the fullscreen 
 
 If `START_FULLSCREEN=0` or you need to reinitiate the fullscreen trick at any time , just click the fullscreen button in the upper right.
 
-![Fullscreen Button](./docs/images/fullscreen_button.png)
+![Fullscreen Button](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/fullscreen_button.png)
 
 ## Bookmarks
 
-Your bookmarks are stored in [/app/public/bookmarks.json](./public/bookmarks.json) and there are a tons of examples included to get you started. Here's a breakdown of a `bookmark` key:
+Your bookmarks are stored in [/app/public/bookmarks.json](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/public/bookmarks.json) and there are a tons of examples included to get you started. Here's a breakdown of a `bookmark` key:
 
 | Key | Description |
 | -------- | ------- |
@@ -172,10 +165,10 @@ It can also be a relative url to a local imges (ex. /images/plex.png) - where yo
 `border` is useful for dark images (ex. a white border makes it easier to see the image boundary). The value here can be anything valid for the CSS border property (ex. "1px solid white").
 
 ## Themes
-| ![](./docs/images/themes/theme_1.png) *Theme 1*  | ![](./docs/images/themes/theme_2.png) *Theme 2*  | ![](./docs/images/themes/theme_3.png) *Theme 3*  | ![](./docs/images/themes/theme_4.png) *Theme 4*  | ![](./docs/images/themes/theme_5.png) *Theme 5*  |
-|---|---|---|---|---|
-| ![](./docs/images/themes/theme_6.png) *Theme 6*  | ![](./docs/images/themes/theme_7.png) *Theme 7*  | ![](./docs/images/themes/theme_8.png) *Theme 8*  | ![](./docs/images/themes/theme_9.png) *Theme 9*  | ![](./docs/images/themes/theme_10.png) *Theme 10*  |
-| ![](./docs/images/themes/theme_11.png) *Theme 11*  | ![](./docs/images/themes/theme_12.png) *Theme 12*  | ![](./docs/images/themes/theme_13.png) *Theme 13*  | ![](./docs/images/themes/theme_14.png) *Theme 14*  | ![](./docs/images/themes/theme_15.png) *Theme 15*  |
+| ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_1.png) **[Theme 1](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_1.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_2.png) **[Theme 2](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_2.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_3.png) **[Theme 3](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_3.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_4.png) **[Theme 4](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_4.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_5.png) **[Theme 5](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_5.png)**  |
+|:-:|:-:|:-:|:-:|:-:|
+| ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_6.png) **[Theme 6](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_6.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_7.png) **[Theme 7](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_7.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_8.png) **[Theme 8](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_8.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_9.png) **[Theme 9](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_9.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_10.png) **[Theme 10](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_10.png)**  |
+| ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_11.png) **[Theme 11](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_11.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_12.png) **[Theme 12](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_12.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_13.png) **[Theme 13](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_13.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_14.png) **[Theme 14](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_14.png)**  | ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_15.png) **[Theme 15](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_15.png)**  |
 
 ## Credits
 Thanks and credit to the following non-self hosted solutions:

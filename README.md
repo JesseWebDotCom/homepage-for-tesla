@@ -23,7 +23,6 @@ Only Tesla native apps (ex. Netflix) open in fullscreen and dim your car's inter
 - **Themeable!** Pick from a preconfigured theme or configure your own.
 - bookmarks can be horizontally scrolled per category
 - Current date/time displayed
-- Dark and light theme
 
 ## Getting Started
 

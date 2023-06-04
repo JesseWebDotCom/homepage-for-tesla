@@ -1,6 +1,6 @@
 ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/src/logo.png)
 
-A self hosted, personal homepage for use inside your Tesla. Keep your favorite bookmarks private, organized, and ready to go. Launch any and all bookmarks in fullscreen (automatically dimming your Tesla's interior and exterior lights).
+A self hosted, personal homepage for use inside your Tesla - organize your favorite bookmarks and launch them in fullscreen (automatically dimming your Tesla's interior and exterior lights).
 
 ![](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_1.png) 
 

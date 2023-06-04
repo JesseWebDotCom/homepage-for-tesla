@@ -95,10 +95,10 @@ networks:
     external: true
 
 services:
-  hompage-for-tesla:
+  homepage-for-tesla:
     image: jessewebdotcom/homepage-for-tesla:latest
-    container_name: hompage-for-tesla
-    hostname: hompage-for-tesla
+    container_name: homepage-for-tesla
+    hostname: homepage-for-tesla
     networks:
       - socket_proxy
     environment:

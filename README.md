@@ -12,7 +12,7 @@ Personal Website: [https://jesseweb.com/self-hosting/homepage-for-tesla](https:/
 
 ## About
 
-Only Tesla native apps (ex. Netflix) open in fullscreen and dim your car's interior and exterior lighting (perfectly setting the mode for media viewing). So what if you wanted to do the same for other sites? `Homepage` can open any site (ex. Prime Video, Disney+, etc) and safely trick the Tesla into opening fullscreen and dim the lights. While there are several great non-self hosted solutions that utilize the same trick (ex. [testube.app](https://testube.app), [abettertheater.com](https://abettertheater.com), [fullscreentesla.com](https://fullscreentesla.com)), `Homepage` gives you privacy and control (plus some enhancements) that only a self hosted solution can provide.
+Only Tesla native apps (ex. Netflix) open in fullscreen and dim your car's interior and exterior lighting (perfectly setting the mood for media viewing). So what if you wanted to do the same for other sites? `Homepage` can open any site (ex. Prime Video, Disney+, etc) and safely trick the Tesla into opening fullscreen and dim the lights. While there are several great non-self hosted solutions that utilize the same trick (ex. [testube.app](https://testube.app), [abettertheater.com](https://abettertheater.com), [fullscreentesla.com](https://fullscreentesla.com)), `Homepage` gives you privacy and control (plus some enhancements) that only a self hosted solution can provide.
 
 ## Features
 

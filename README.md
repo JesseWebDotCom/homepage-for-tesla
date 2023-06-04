@@ -52,7 +52,7 @@ You will need to set the correct parameters for your setup:
 | `-v /path/to/bookmarks.json:/app/public/bookmarks.json` | (required) Volume mount for bookmarks file. You can use the one in this repo to get started. |
 | `-v /path/to/images:/app/public/images` | (optional) Volume mount for images folder for any local bookmark images. |
 | `-e START_FULLSCREEN="1"`        | (optional, default=1) Automatically launches the site in fullscreen mode as soon as its opened. To disable, set to "0".                      |
-| `-e DEFAULT_THEME="1"`        | (optional, default=1) Sets the look and feel to one of the availble [themes](#themes). Set to "0" to customize your own theme.                      |
+| `-e DEFAULT_THEME="1"`        | (optional, default=1) Sets the look and feel to one of the availble [themes](#themes) (ex. `DEFAULT_THEME=7` sets the theme to **[Theme 7](https://github.com/JesseWebDotCom/homepage-for-tesla/raw/main/docs/images/themes/theme_7.png)**). Set to "0" to customize your own theme.                      |
 | `-e BOOKMARK_HEGHT="150"`        | (optional, default=150) Only applicable when DEFAULT_THEME=0. Sets the pixel height of the bookmark image.                      |
 | `-e BOOKMARK_PADDING="15"`        | (optional, default=15) Only applicable when DEFAULT_THEME=0. Sets the pixel padding between bookmark images.                      |
 | `-e BOOKMARK_RADIUS="24"`        | (optional, default=24) Only applicable when DEFAULT_THEME=0. Sets the pixel rouding of the bookmark image.                      |

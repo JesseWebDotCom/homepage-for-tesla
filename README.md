@@ -82,8 +82,9 @@ services:
 
 Here is an expanded docker compose example that:
 * adds the container to the `socket_proxy` network (change to your desired network)
-* adds Traefik labels to HTTPS access this app through your subdomain (with a basic auth username and password) - assuming you have HTTPS, a domain, and Traefik configured
-* sets the app to start fullscreen, in dark mode, with the default theme
+* adds Traefik labels to HTTPS access this app through a domain (with a basic auth username and password) - assuming you have HTTPS, a domain, and Traefik configured
+* selects theme 1
+* maps public/images and public/bookmarks.json to local volumes
 
 ```yaml
 version: '3'
